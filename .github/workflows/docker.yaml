@@ -4,8 +4,8 @@ on:
     types: sync_docker # 只有当 event_type 为 sync_docker 时触发
 jobs:
   sync-task:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
